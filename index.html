@@ -18,10 +18,29 @@
         --font-Outfit: "Outfit", sans-serif;
         --font-Ovo: "Ovo", serif;
       }
+      .skill {
+        @apply px-3 py-1.5 rounded-lg bg-gray-100 text-gray-700 text-sm dark:bg-white/10 dark:text-white/80;
+      }
+      .tech {
+        @apply px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs dark:bg-white/10 dark:text-white/70;
+      }
+      .strength-card {
+        @apply border border-gray-300 dark:border-white/20 rounded-2xl p-7 hover:-translate-y-2 transition duration-500 hover:shadow-lg;
+      }
+      .strength-card h3 {
+        @apply text-xl font-semibold mb-3;
+      }
+      .strength-card p {
+        @apply text-sm text-gray-600 dark:text-white/60;
+      }
     </style>
   </head>
-  <body class="overflow-x-hidden font-Outfit leading-8 dark:bg-gray-900 dark:text-white">
-    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+  <body
+    class="overflow-x-hidden font-Outfit leading-8 dark:bg-gray-900 dark:text-white"
+  >
+    <div
+      class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden"
+    >
       <img src="./images/header-bg-color.png" alt="" class="full" />
     </div>
 
@@ -42,16 +61,21 @@
         class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent"
       >
         <li><a href="#top">Home</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">My Work</a></li>
-        <li><a href="#contact">contact me</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
       </ul>
 
       <div class="flex items-center gap-4">
         <button onclick="toggleDarkMode()" class="hover:cursor-pointer">
           <img src="./images/moon_icon.png" alt="" class="w-6 dark:hidden" />
-          <img src="./images/sun_icon.png" alt="" class="w-6 hidden dark:block" />
+          <img
+            src="./images/sun_icon.png"
+            alt=""
+            class="w-6 hidden dark:block"
+          />
         </button>
 
         <a
@@ -59,13 +83,21 @@
           class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50"
         >
           Contact
-          <img src="./images/arrow-icon.png" alt="" class="w-3 dark:hidden"/>
-          <img src="./images/arrow-icon-dark.png" alt="" class="w-3 hidden dark:block"/>
+          <img src="./images/arrow-icon.png" alt="" class="w-3 dark:hidden" />
+          <img
+            src="./images/arrow-icon-dark.png"
+            alt=""
+            class="w-3 hidden dark:block"
+          />
         </a>
 
         <button class="block md:hidden ml-3" onclick="openMenu()">
           <img src="./images/menu-black.png" alt="" class="w-6 dark:hidden" />
-          <img src="./images/menu-white.png" alt="" class="w-6 hidden dark:block" />
+          <img
+            src="./images/menu-white.png"
+            alt=""
+            class="w-6 hidden dark:block"
+          />
         </button>
       </div>
 
@@ -88,10 +120,11 @@
         </div>
 
         <li><a href="#top" onclick="closeMenu()">Home</a></li>
-        <li><a href="#about" onclick="closeMenu()">About me</a></li>
-        <li><a href="#services" onclick="closeMenu()">Services</a></li>
-        <li><a href="#work" onclick="closeMenu()">My Work</a></li>
-        <li><a href="#contact" onclick="closeMenu()">contact me</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+        <li><a href="#education" onclick="closeMenu()">Education</a></li>
       </ul>
     </nav>
 
@@ -109,17 +142,18 @@
         <img src="./images/hand-icon.png" alt="" class="w-6" />
       </h3>
       <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
-        Fullstack web developer based in Bangladesh.
+        Full-Stack Web Developer building modern web applications.
       </h1>
       <p class="max-w-2xl mx-auto font-Ovo">
-        I’m a Full Stack Developer from Dhaka, Bangladesh, passionate about building modern, responsive, and scalable web applications. I work with technologies including HTML, CSS, JavaScript, TypeScript, React.js, Node.js, SQL, and NoSQL databases, with a strong focus on creating efficient, user-friendly, and reliable digital solutions.
+        I build responsive, scalable, and user-focused web applications using
+        modern frontend, backend, and database technologies.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a
-          href="#contact"
+          href="#projects"
           class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent"
-          >Contact me
+          >View My Projects
           <img src="./images/right-arrow-white.png" alt="" class="w-4"
         /></a>
 
@@ -127,8 +161,33 @@
           href="./images/Md. Sheaf Hassan.pdf"
           download
           class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
-          >My resume <img src="./images/download-icon.png" alt="" class="w-4"
+          >Download My Resume<img
+            src="./images/download-icon.png"
+            alt=""
+            class="w-4"
         /></a>
+      </div>
+      <!-- Social Links -->
+      <div class="flex items-center gap-6 mt-10">
+        <a
+          href="https://github.com/sheaf-hassan"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:-translate-y-1 transition"
+        >
+          GitHub
+        </a>
+        <span class="text-gray-400">•</span>
+        <a
+          href="https://www.linkedin.com/in/md-sheaf-hassan/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:-translate-y-1 transition"
+        >
+          LinkedIn
+        </a>
+        <span class="text-gray-400">•</span>
+        <a href="#contact" class="hover:-translate-y-1 transition"> Email </a>
       </div>
     </div>
 
@@ -148,7 +207,11 @@
           <div
             class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)]"
           >
-            <img src="./images/circular-text.png" alt="" class="w-full animate-[spin_6s_linear_infinite]" />
+            <img
+              src="./images/circular-text.png"
+              alt=""
+              class="w-full animate-[spin_6s_linear_infinite]"
+            />
             <img
               src="./images/dev-icon.png"
               alt=""
@@ -157,13 +220,17 @@
           </div>
         </div>
         <div class="flex-1">
-          <p class="text-center mb-10 max-w-2xl font-Ovo">
-            I am a Full-Stack Developer passionate about building modern,
-            responsive, and scalable web applications. Skilled in React,
-            TypeScript, Node.js, Express, MongoDB, PostgreSQL, and REST APIs,
-            with experience developing complete applications from frontend to
-            backend. I enjoy solving real-world problems through clean,
-            efficient, and user-focused solutions.
+          <p class="mb-10 max-w-2xl font-Ovo">
+            I'm a Full-Stack Web Developer focused on building modern,
+            responsive, and scalable web applications. I enjoy working across
+            both frontend and backend development — from creating clean user
+            interfaces with React and TypeScript/JavaScript to developing REST
+            APIs and managing SQL and NoSQL databases.
+          </p>
+          <p class="mb-10 max-w-2xl font-Ovo">
+            I enjoy solving real-world problems through practical, efficient,
+            and user-focused solutions while continuously learning modern
+            technologies and development practices.
           </p>
 
           <ul
@@ -172,60 +239,69 @@
             <li
               class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] dark:border-white dark:hover:shadow-white dark:hover:bg-[#2a004a]/50"
             >
-              <img src="./images/code-icon.png" alt="" class="w-7 mt-3 dark:hidden" />
-              <img src="./images/code-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block" />
-              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
-              <p class="text-gray-600 text-sm dark:text-white/80">
-                HTML, CSS, Javascript, React Js, Next Js
-              </p>
-            </li>
-            <li
-              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] dark:border-white dark:hover:shadow-white dark:hover:bg-[#2a004a]/50"
-            >
-              <img src="./images/edu-icon.png" alt="" class="w-7 mt-3 dark:hidden" />
-              <img src="./images/edu-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block" />
-              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
-              <p class="text-gray-600 text-sm dark:text-white/80">
+              <div class="flex items-center gap-3">
+                <img
+                  src="./images/edu-icon.png"
+                  alt=""
+                  class="w-7 dark:hidden"
+                />
+                <img
+                  src="./images/edu-icon-dark.png"
+                  alt=""
+                  class="w-7 hidden dark:block"
+                />
+
+                <h3 class="font-semibold text-gray-700 dark:text-white">
+                  Education
+                </h3>
+              </div>
+              <p class="text-gray-600 text-sm dark:text-white/80 my-3">
                 B.Sc. Engineering in Electronics and Communication Engineering
               </p>
             </li>
             <li
               class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] dark:border-white dark:hover:shadow-white dark:hover:bg-[#2a004a]/50"
             >
-              <img src="./images/project-icon.png" alt="" class="w-7 mt-3 dark:hidden"/>
-              <img src="./images/project-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block"/>
-              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3>
-              <p class="text-gray-600 text-sm dark:text-white/80">Built more than 3 projects</p>
-            </li>
-          </ul>
-
-          <h4 class="my-6 text-gray-700 font-Ovo dark:text-white/80">Tools I use</h4>
-
-          <ul class="flex items-center gap-3 sm:gap-5">
-            <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
-            >
-              <img src="./images/vscode.png" alt="" class="w-5 sm:w-7" />
-            </li>
-            <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
-            >
-              <img src="./images/firebase.png" alt="" class="w-5 sm:w-7" />
-            </li>
-            <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
-            >
-              <img src="./images/mongodb.png" alt="" class="w-5 sm:w-7" />
+              <div class="flex items-center gap-3">
+                <img
+                  src="./images/uni-icon.png"
+                  alt=""
+                  class="w-7 dark:hidden"
+                />
+                <img
+                  src="./images/uni-icon-dark.png"
+                  alt=""
+                  class="w-7 hidden dark:block"
+                />
+                <h3 class="font-semibold text-gray-700 dark:text-white">
+                  University
+                </h3>
+              </div>
+              <p class="text-gray-600 text-sm dark:text-white/80 my-3">
+                Hajee Mohammad Danesh Science & Technology University
+              </p>
             </li>
             <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] dark:border-white dark:hover:shadow-white dark:hover:bg-[#2a004a]/50"
             >
-              <img src="./images/figma.png" alt="" class="w-5 sm:w-7" />
-            </li>
-            <li
-              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
-            >
-              <img src="./images/git.png" alt="" class="w-5 sm:w-7" />
+              <div class="flex items-center gap-3">
+                <img
+                  src="./images/focus-icon.png"
+                  alt=""
+                  class="w-7 dark:hidden"
+                />
+                <img
+                  src="./images/focus-icon-dark.png"
+                  alt=""
+                  class="w-7 hidden dark:block"
+                />
+                <h3 class="font-semibold text-gray-700 dark:text-white">
+                  Focus
+                </h3>
+              </div>
+              <p class="text-gray-600 text-sm dark:text-white/80 my-3">
+                Full-Stack Web Development
+              </p>
             </li>
           </ul>
         </div>
@@ -233,15 +309,12 @@
     </div>
 
     <!-- -------------- services ------------- -->
-    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 class="text-center mb-2 text-lg font-Ovo">What I offer</h4>
-      <h2 class="text-center text-5xl font-Ovo">My services</h2>
+    <div id="skills" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 class="text-center mb-2 text-lg font-Ovo">My Technical Skills</h4>
+      <h2 class="text-center text-5xl font-Ovo">Technologies I Work With</h2>
       <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        I provide full-stack web development services, including responsive
-        frontend development, modern UI design, backend development, REST API
-        integration, database management, authentication, and deployment. I
-        build fast, secure, and scalable web applications tailored to meet
-        specific business and user needs.
+        A collection of technologies and tools I use to design, develop, and
+        deploy modern web applications.
       </p>
 
       <div
@@ -250,123 +323,378 @@
         <div
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 dark:hover:bg-[#2a004a] dark:hover:shadow-white"
         >
-          <img src="./images/web-icon.png" alt="" class="w-10" />
-          <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web Design</h3>
-          <p class="text-sm text-gray-600 leading-5 dark:text-white/80">
-            Web development is the process of building, programming...
-          </p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5"
-            >Read more <img src="./images/right-arrow.png" alt="" class="w-4"
-          /></a>
+          <div class="flex items-center gap-3">
+            <img src="./images/frontend.png" alt="" class="w-10 h-10" />
+            <h3 class="text-lg my-4 text-gray-700 dark:text-white">Frontend</h3>
+          </div>
+          <div
+            class="flex flex-wrap gap-3 text-sm text-gray-600 leading-5 dark:text-white/80 my-3"
+          >
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">TypeScript</span>
+            <span class="skill">React.js</span>
+            <span class="skill">Next.js</span>
+            <span class="skill">Tailwind CSS</span>
+            <span class="skill">React Router</span>
+            <span class="skill">React Hook Form</span>
+          </div>
         </div>
         <div
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 dark:hover:bg-[#2a004a] dark:hover:shadow-white"
         >
-          <img src="./images/mobile-icon.png" alt="" class="w-10" />
-          <h3 class="text-lg my-4 text-gray-700 dark:text-white">Mobile App</h3>
-          <p class="text-sm text-gray-600 leading-5 dark:text-white/80">
-            Web development is the process of building, programming...
-          </p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5"
-            >Read more <img src="./images/right-arrow.png" alt="" class="w-4"
-          /></a>
+          <div class="flex items-center gap-3">
+            <img src="./images/backend.png" alt="" class="w-10 h-10" />
+            <h3 class="text-lg my-4 text-gray-700 dark:text-white">Backend</h3>
+          </div>
+          <div
+            class="flex flex-wrap gap-3 text-sm text-gray-600 leading-5 dark:text-white/80 my-3"
+          >
+            <span class="skill">Node.js</span>
+            <span class="skill">Express.js</span>
+            <span class="skill">REST API</span>
+            <span class="skill">JWT</span>
+            <span class="skill">Firebase Auth</span>
+            <span class="skill">Authentication</span>
+            <span class="skill">Authorization</span>
+          </div>
         </div>
         <div
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 dark:hover:bg-[#2a004a] dark:hover:shadow-white"
         >
-          <img src="./images/ui-icon.png" alt="" class="w-10" />
-          <h3 class="text-lg my-4 text-gray-700 dark:text-white">UI/ Ux design</h3>
-          <p class="text-sm text-gray-600 leading-5 dark:text-white/80">
-            Web development is the process of building, programming...
-          </p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5"
-            >Read more <img src="./images/right-arrow.png" alt="" class="w-4"
-          /></a>
+          <div class="flex items-center gap-3">
+            <img src="./images/database.png" alt="" class="w-10 h-10" />
+            <h3 class="text-lg my-4 text-gray-700 dark:text-white">Database</h3>
+          </div>
+          <div
+            class="flex flex-wrap gap-3 text-sm text-gray-600 leading-5 dark:text-white/80 my-3"
+          >
+            <span class="skill">MongoDB</span>
+            <span class="skill">PostgreSQL</span>
+            <span class="skill">Prisma</span>
+            <span class="skill">SQL</span>
+            <span class="skill">NoSQL</span>
+          </div>
         </div>
         <div
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 dark:hover:bg-[#2a004a] dark:hover:shadow-white"
         >
-          <img src="./images/graphics-icon.png" alt="" class="w-10" />
-          <h3 class="text-lg my-4 text-gray-700 dark:text-white">Graphics design</h3>
-          <p class="text-sm text-gray-600 leading-5 dark:text-white/80">
-            Web development is the process of building, programming...
-          </p>
-          <a href="" class="flex items-center gap-2 text-sm mt-5"
-            >Read more <img src="./images/right-arrow.png" alt="" class="w-4"
-          /></a>
+          <div class="flex items-center gap-3">
+            <img src="./images/tools.png" alt="" class="w-10 h-10" />
+            <h3 class="text-lg my-4 text-gray-700 dark:text-white">
+              Tools I use
+            </h3>
+          </div>
+          <ul class="flex items-center gap-5">
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-white my-3"
+            >
+              <img src="./images/vscode.png" alt="" class="w-5" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-white"
+            >
+              <img src="./images/firebase.png" alt="" class="w-5" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-white"
+            >
+              <img src="./images/git.png" alt="" class="w-5" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-white"
+            >
+              <img src="./images/github.png" alt="" class="w-5" />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-white"
+            >
+              <img src="./images/vercel.png" alt="" class="w-5" />
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
     <!-- ----------------- my work ----------------- -->
-    <div id="work" class="w-full px-[12%] py-10 scroll-mt-20 ">
-      <h4 class="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
-      <h2 class="text-center text-5xl font-Ovo">My latest work</h2>
+    <div id="projects" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 class="text-center mb-2 text-lg font-Ovo">Featured Projects</h4>
+      <h2 class="text-center text-5xl font-Ovo">What I've Built</h2>
       <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        Welcome to my web development portfolio! Explore a collection of
-        projects showcasing my expertise in fullstack web development
+        Real-world full-stack web applications built with modern technologies,
+        focusing on usability, performance, and scalable architecture.
       </p>
-
-      <div
-        class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5 dark:text-black"
-      >
+      <!-- work-1 -->
+      <div class="grid lg:grid-cols-2 gap-10 items-center mt-16">
+        <!-- Screenshot -->
         <div
-          class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+          class="overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 shadow-lg"
         >
-          <div
-            class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
+          <img
+            src="./images/work-1.png"
+            alt="Instant Grocery Delivery"
+            class="w-full aspect-video object-cover hover:scale-105 transition duration-700"
+          />
+        </div>
+        <!-- Details -->
+        <div>
+          <span
+            class="inline-block px-4 py-1 rounded-full text-sm bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300"
           >
-            <div>
-              <h2 class="font-semibold">Instant Grocery</h2>
-              <p class="text-sm text-gray-700">
-                A full-stack instant grocery delivery web application...
-              </p>
-            </div>
-
+            Instant Grocery
+          </span>
+          <h3 class="text-3xl md:text-4xl font-semibold mt-4">
+            Instant Grocery Delivery
+          </h3>
+          <p class="mt-4 text-gray-600 dark:text-white/70">
+            A full-stack grocery delivery platform designed to manage customers,
+            products, orders, and delivery operations.
+          </p>
+          <!-- Tech -->
+          <div class="flex flex-wrap gap-2 mt-6">
+            <span class="tech"> React </span>
+            <span class="tech">TypeScript</span>
+            <span class="tech">Tailwind CSS</span>
+            <span class="tech">Node.js</span>
+            <span class="tech">Express.js</span>
+            <span class="tech">PostgreSQL</span>
+            <span class="tech">Prisma</span> <span class="tech">Inngest</span>
+          </div>
+          <!-- Features -->
+          <ul class="mt-6 space-y-2 text-sm text-gray-600 dark:text-white/70">
+            <li>
+              ✓ Role-based authentication for Admin, User and Delivery Partner
+            </li>
+            <li>✓ Admin and delivery partner dashboards</li>
+            <li>✓ Real-time order tracking and live location sharing</li>
+            <li>✓ Automated emails and delivery partner auto-assignment</li>
+            <li>✓ Production deployment with Vercel</li>
+          </ul>
+          <!-- Buttons -->
+          <div class="flex flex-wrap gap-4 mt-8">
             <a
               href="https://instant-grocery-delivery.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
+              class="px-6 py-2.5 rounded-full bg-black text-white hover:bg-gray-800 transition dark:bg-white dark:text-black dark:hover:bg-gray-200"
             >
-              <div
-                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
-              >
-                <img src="./images/send-icon.png" alt="" class="w-5" />
-              </div>
+              Live Demo
             </a>
-          </div>
-        </div>
-        <div
-          class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-        >
-          <div
-            class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
-          >
-            <div>
-              <h2 class="font-semibold">Employee Management System</h2>
-              <p class="text-sm text-gray-700">A full-stack employee management web application...  </p>
-            </div>
             <a
-              href="https://employee-management-system-omega-bay.vercel.app/login"
+              href="https://github.com/sheaf-hassan/instant_grocery_delivery"
               target="_blank"
               rel="noopener noreferrer"
+              class="px-6 py-2.5 rounded-full border border-gray-500 hover:bg-gray-100 transition dark:hover:bg-white/10"
             >
-              <div
-                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
-              >
-                <img src="./images/send-icon.png" alt="" class="w-5" />
-              </div>
+              GitHub
             </a>
           </div>
         </div>
       </div>
-      <a
-        href="#"
-        class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 dark:text-white dark:border-white dark:hover:bg-[#2a004a]"
-        >Show more
-        <img src="./images/right-arrow-bold.png" alt="" class="w-4 dark:hidden" />
-        <img src="./images/right-arrow-bold-dark.png" alt="" class="w-4 hidden dark:block" />
-      </a>
+      <!-- work-2 -->
+      <div class="grid lg:grid-cols-2 gap-10 items-center mt-24">
+        <!-- Details -->
+        <div class="lg:order-1">
+          <span
+            class="inline-block px-4 py-1 rounded-full text-sm bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
+          >
+            QuickEMS
+          </span>
+          <h3 class="text-3xl md:text-4xl font-semibold mt-4">
+            Employee Management System
+          </h3>
+          <p class="mt-4 text-gray-600 dark:text-white/70">
+            A role-based employee management platform for managing employees,
+            attendance, leave, and payslip operations.
+          </p>
+          <!-- Tech -->
+          <div class="flex flex-wrap gap-2 mt-6">
+            <span class="tech"> React</span>
+            <span class="tech"> JavaScript </span>
+            <span class="tech"> Tailwind CSS </span>
+            <span class="tech"> Node.js </span>
+            <span class="tech"> Express.js </span>
+            <span class="tech"> MongoDB</span>
+            <span class="tech"> Inngest </span>
+          </div>
+          <!-- Features -->
+          <ul class="mt-6 space-y-2 text-sm text-gray-600 dark:text-white/70">
+            <li>✓ Admin and Employee role-based access</li>
+            <li>✓ Employee management system</li>
+            <li>✓ Attendance and leave management</li>
+            <li>✓ Payslip management</li>
+            <li>✓ REST API development with Express.js</li>
+            <li>✓ Background jobs and scheduled tasks with Inngest</li>
+          </ul>
+          <!-- Buttons -->
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a
+              href="https://employee-management-system-omega-bay.vercel.app/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-6 py-2.5 rounded-full bg-black text-white hover:bg-gray-800 transition dark:bg-white dark:text-black dark:hover:bg-gray-200"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/sheaf-hassan/employee_management_system"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-6 py-2.5 rounded-full border border-gray-500 hover:bg-gray-100 transition dark:hover:bg-white/10"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+        <!-- Screenshot -->
+        <div
+          class="overflow-hidden rounded-2xl border border-gray-200 dark:border-white/10 shadow-lg lg:order-2"
+        >
+          <img
+            src="./images/work-2.png"
+            alt="Employee Management System"
+            class="w-full aspect-video object-cover hover:scale-105 transition duration-700"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------- experience ------------ -->
+    <div id="experience" class="w-full px-[8%] lg:px-[12%] py-20 scroll-mt-20">
+      <div class="text-center">
+        <p class="text-lg font-Ovo mb-2">Professional Experience</p>
+        <h2 class="text-4xl md:text-5xl font-Ovo">Experience</h2>
+      </div>
+      <div class="max-w-4xl mx-auto mt-14">
+        <div
+          class="relative border-l-2 border-gray-300 dark:border-white/20 pl-8 md:pl-10"
+        >
+          <!-- Timeline Dot -->
+          <div
+            class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] border-4 border-white dark:border-gray-950"
+          ></div>
+          <p class="text-sm text-gray-500 dark:text-white/50">
+            17 August 2025 — 16 September 2025
+          </p>
+          <h3 class="text-2xl font-semibold mt-2">
+            Trainee Network Engineer Intern
+          </h3>
+          <p class="mt-1 font-medium">
+            Bangladesh Telecommunications Company Limited (BTCL)
+          </p>
+          <p class="text-sm text-gray-500 dark:text-white/50">
+            Dinajpur, Bangladesh
+          </p>
+          <ul class="mt-6 space-y-3 text-gray-600 dark:text-white/70">
+            <li>
+              • Gained practical knowledge of LAN/WAN, IP addressing, routing,
+              and switching.
+            </li>
+            <li>
+              • Assisted with network monitoring, troubleshooting, and
+              connectivity issues.
+            </li>
+            <li>
+              • Learned about telecommunications systems, network
+              infrastructure, and networking equipment.
+            </li>
+            <li>
+              • Developed practical understanding of network maintenance and
+              technical support.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------- education ------------- -->
+    <div id="education" class="w-full px-[8%] lg:px-[12%] py-20">
+      <div class="text-center">
+        <p class="text-lg font-Ovo mb-2">Academic Background</p>
+        <h2 class="text-4xl md:text-5xl font-Ovo">Education</h2>
+      </div>
+      <div
+        class="max-w-4xl mx-auto mt-14 strength-card dark:border-white/20 rounded-2xl p-8 md:p-10"
+      >
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+        >
+          <div>
+            <p class="text-sm text-gray-500 dark:text-white/50">2020 — 2025</p>
+            <h3 class="text-2xl font-semibold mt-2">
+              B.Sc. Engineering in Electronics and Communication Engineering
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-white/70">
+              Hajee Mohammad Danesh Science and Technology University
+            </p>
+          </div>
+          <span
+            class="w-fit px-4 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-sm"
+          >
+            <a
+              href="https://www.hstu.ac.bd/"
+              target="_blank"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              HSTU
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------- work reason --------- -->
+    <div class="w-full px-[8%] lg:px-[12%] py-20">
+      <div class="text-center">
+        <p class="text-lg font-Ovo mb-2">Why Work With Me</p>
+        <h2 class="text-4xl md:text-5xl font-Ovo">What I Bring</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+        <div class="strength-card">
+          <h3>Full-Stack Development</h3>
+          <p>
+            Ability to build complete web applications across frontend, backend,
+            APIs, and databases.
+          </p>
+        </div>
+        <div class="strength-card">
+          <h3>Problem Solving</h3>
+          <p>
+            Focused on breaking real-world problems into practical and
+            maintainable technical solutions.
+          </p>
+        </div>
+        <div class="strength-card">
+          <h3>Responsive Development</h3>
+          <p>
+            Building clean and responsive interfaces that work across different
+            screen sizes.
+          </p>
+        </div>
+        <div class="strength-card">
+          <h3>API & Database Development</h3>
+          <p>
+            Experience developing REST APIs and working with both SQL and NoSQL
+            databases.
+          </p>
+        </div>
+        <div class="strength-card">
+          <h3>Continuous Learning</h3>
+          <p>
+            Always improving development skills and learning modern technologies
+            and practices.
+          </p>
+        </div>
+        <div class="strength-card">
+          <h3>Git & Collaboration</h3>
+          <p>
+            Comfortable using Git and GitHub for source control, project
+            management, and collaboration.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- ----------- contact ------------- -->
@@ -381,22 +709,30 @@
         feedback, please use the form below.
       </p>
 
-      <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
-        <input type="hidden" name="access_key" value="1731aa22-4b9a-4fa6-a0a0-c5ff4572dc38">
+      <form
+        method="POST"
+        action="https://api.web3forms.com/submit"
+        class="max-w-2xl mx-auto"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="1731aa22-4b9a-4fa6-a0a0-c5ff4572dc38"
+        />
         <div
           class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 mt-10 mb-8"
         >
           <input
             type="text"
             placeholder="Enter your name"
-            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-[#2a004a]/30 dark:border-white/90" 
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-[#2a004a]/30 dark:border-white/90"
             required
             name="name"
           />
           <input
             type="email"
             placeholder="Enter your email"
-            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-[#2a004a]/30 dark:border-white/90" 
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-[#2a004a]/30 dark:border-white/90"
             required
             name="email"
           />
@@ -404,7 +740,7 @@
         <textarea
           rows="6"
           placeholder="Enter your message"
-          class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-[#2a004a]/30 dark:border-white/90" 
+          class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-[#2a004a]/30 dark:border-white/90"
           required
           name="message"
         ></textarea>
@@ -420,16 +756,34 @@
     <!-- --------------------- footer --------------------- -->
     <div class="mt-20">
       <div class="text-center">
-        <img src="./images/logo.png" alt="" class="w-36 mx-auto mb-2 dark:hidden" />
-        <img src="./images/logo_dark.png" alt="" class="w-36 mx-auto mb-2 hidden dark:block" />
+        <img
+          src="./images/logo.png"
+          alt=""
+          class="w-36 mx-auto mb-2 dark:hidden"
+        />
+        <img
+          src="./images/logo_dark.png"
+          alt=""
+          class="w-36 mx-auto mb-2 hidden dark:block"
+        />
+        <p>Full-Stack Web Developer</p>
+        <p class="mt-2 text-sm">React • TypeScript • Node.js • PostgreSQL</p>
         <div class="w-max flex items-center gap-2 mx-auto">
-          <img src="./images/mail_icon.png" alt="" class="w-6 dark:hidden"/>
-          <img src="./images/mail_icon_dark.png" alt="" class="w-6 hidden dark:block"/>
+          <img src="./images/mail_icon.png" alt="" class="w-6 dark:hidden" />
+          <img
+            src="./images/mail_icon_dark.png"
+            alt=""
+            class="w-6 hidden dark:block"
+          />
           md.arhassan@gmail.com
         </div>
         <div class="w-max flex items-center gap-1 mx-auto">
-          <img src="./images/phone.png" alt="" class="w-6 dark:hidden"/>
-          <img src="./images/phone_dark.png" alt="" class="w-6 hidden dark:block"/>
+          <img src="./images/phone.png" alt="" class="w-6 dark:hidden" />
+          <img
+            src="./images/phone_dark.png"
+            alt=""
+            class="w-6 hidden dark:block"
+          />
           +8801719541209
         </div>
       </div>
@@ -439,16 +793,20 @@
         <p>© 2026 Md. Sheaf Hassan. All rights reserved.</p>
         <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
-            <a href="https://www.linkedin.com/in/md-sheaf-hassan/" class="flex gap-1">
+            <a
+              href="https://www.linkedin.com/in/md-sheaf-hassan/"
+              class="flex gap-1"
+            >
               <img src="./images/linkedin.png" alt="" class="w-6 sm:w-7" />
               LinkedIn
             </a>
           </li>
-          <li><a href="https://github.com/sheaf-hassan" class="flex gap-1">
-            <img src="./images/git.png" alt="" class="w-6 sm:w-7" />
-            GitHub
-          </a>
-        </li>
+          <li>
+            <a href="https://github.com/sheaf-hassan" class="flex gap-1">
+              <img src="./images/git.png" alt="" class="w-6 sm:w-7" />
+              GitHub
+            </a>
+          </li>
         </ul>
       </div>
     </div>
