@@ -47,25 +47,45 @@
     <nav
       class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
     >
-      <img
-        class="w-28 cursor-pointer mr-14 dark:hidden"
-        src="./images/logo.png"
-        alt="Logo"
-      />
-      <img
-        class="w-28 cursor-pointer mr-14 hidden dark:block"
-        src="./images/logo_dark.png"
-        alt="Logo"
-      />
+      <a href="#top">
+        <img
+          class="w-28 cursor-pointer mr-14 dark:hidden"
+          src="./images/logo.png"
+          alt="Logo"
+        />
+        <img
+          class="w-28 cursor-pointer mr-14 hidden dark:block"
+          src="./images/logo_dark.png"
+          alt="Logo"
+        />
+      </a>
       <ul
         class="hidden md:flex items-center gap-4 lg:gap-8 rounded-full px-10 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent"
       >
-        <li><a href="#top">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
+        <li>
+          <a href="#top" class="hover:text-purple-600 transition">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-purple-600 transition">About</a>
+        </li>
+        <li>
+          <a href="#skills" class="hover:text-purple-600 transition">Skills</a>
+        </li>
+        <li>
+          <a href="#projects" class="hover:text-purple-600 transition"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href="#experience" class="hover:text-purple-600 transition"
+            >Experience</a
+          >
+        </li>
+        <li>
+          <a href="#education" class="hover:text-purple-600 transition"
+            >Education</a
+          >
+        </li>
       </ul>
 
       <div class="flex items-center gap-5">
@@ -80,7 +100,7 @@
 
         <a
           href="#contact"
-          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo hover:bg-gray-200 transition dark:border-white/50 dark:hover:bg-white/20"
         >
           Contact
           <img src="./images/arrow-icon.png" alt="" class="w-3 dark:hidden" />
@@ -129,68 +149,84 @@
     </nav>
 
     <!-- -------- header ----------- -->
-     <div class="min-h-screen px-5 lg:px-[10%] flex items-center justify-center pt-10">
     <div
-      class="w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center gap-4"
+      id="top"
+      class="min-h-screen px-5 lg:px-[10%] flex items-center justify-center pt-10"
     >
-      <img
-        src="./images/profile-img .png"
-        alt=""
-        class="rounded-full w-32 mt-25"
-      />
-      <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
-        Hi! I'm Md. Sheaf Hassan
-        <img src="./images/hand-icon.png" alt="" class="w-6" />
-      </h3>
-      <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
-        Full-Stack Web Developer building modern web applications.
-      </h1>
-      <p class="max-w-2xl mx-auto font-Ovo">
-        I build responsive, scalable, and user-focused web applications using
-        modern frontend, backend, and database technologies.
-      </p>
+      <div
+        class="w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center gap-4"
+      >
+        <img
+          src="./images/profile-img .png"
+          alt=""
+          class="rounded-full w-32 mt-25 object-cover"
+        />
+        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-4 font-Ovo">
+          Hi! I'm Md. Sheaf Hassan
+          <img src="./images/hand-icon.png" alt="" class="w-6" />
+        </h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo leading-tight">
+          Full-Stack Web Developer
+          <span
+            class="bg-gradient-to-r from-[#b820e6] to-[#da7d20] bg-clip-text text-transparent"
+          >
+            building modern web applications.
+          </span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-gray-600 dark:text-white/70">
+          I build responsive, scalable, and user-focused web applications using
+          modern frontend, backend, and database technologies.
+        </p>
 
-      <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
-        <a
-          href="#projects"
-          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent"
-          >View My Projects
-          <img src="./images/right-arrow-white.png" alt="" class="w-4"
-        /></a>
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-8">
+          <a
+            href="#projects"
+            class="px-9 py-3 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 hover:scale-105 transition"
+            >View My Projects
+            <img src="./images/right-arrow-white.png" alt="" class="w-4"
+          /></a>
 
-        <a
-          href="./images/Md. Sheaf Hassan.pdf"
-          download
-          class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
-          >Download My Resume<img
-            src="./images/download-icon.png"
-            alt=""
-            class="w-4"
-        /></a>
+          <a
+            href="./images/Md. Sheaf Hassan.pdf"
+            download
+            class="px-9 py-3 border border-gray-500 rounded-full flex items-center gap-2 hover:bg-gray-200 transition dark:border-white/50 dark:hover:bg-white/20"
+            >Download My Resume
+            <img
+              src="./images/download-icon.png"
+              alt=""
+              class="w-4 dark:hidden"
+              />
+            <img
+              src="./images/download-icon-dark.png"
+              alt=""
+              class="w-5.5 hidden dark:block"
+              />
+            </a>
+        </div>
+        <!-- Social Links -->
+        <div class="flex items-center gap-6 mt-10">
+          <a
+            href="https://github.com/sheaf-hassan"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:-translate-y-1 transition"
+          >
+            GitHub
+          </a>
+          <span class="text-gray-400">•</span>
+          <a
+            href="https://www.linkedin.com/in/md-sheaf-hassan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:-translate-y-1 transition"
+          >
+            LinkedIn
+          </a>
+          <span class="text-gray-400">•</span>
+          <a href="#contact" class="hover:-translate-y-1 transition"> Email </a>
+        </div>
       </div>
-      <!-- Social Links -->
-      <div class="flex items-center gap-6 mt-10">
-        <a
-          href="https://github.com/sheaf-hassan"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:-translate-y-1 transition"
-        >
-          GitHub
-        </a>
-        <span class="text-gray-400">•</span>
-        <a
-          href="https://www.linkedin.com/in/md-sheaf-hassan/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:-translate-y-1 transition"
-        >
-          LinkedIn
-        </a>
-        <span class="text-gray-400">•</span>
-        <a href="#contact" class="hover:-translate-y-1 transition"> Email </a>
-      </div>
-    </div>
     </div>
 
     <!-- ------------------- about me --------------------- -->
@@ -222,14 +258,14 @@
           </div>
         </div>
         <div class="flex-1">
-          <p class="mb-10 max-w-2xl font-Ovo">
+          <p class="mb-10 max-w-2xl text-gray-600 dark:text-white/70">
             I'm a Full-Stack Web Developer focused on building modern,
             responsive, and scalable web applications. I enjoy working across
             both frontend and backend development — from creating clean user
             interfaces with React and TypeScript/JavaScript to developing REST
             APIs and managing SQL and NoSQL databases.
           </p>
-          <p class="mb-10 max-w-2xl font-Ovo">
+          <p class="mb-10 max-w-2xl text-gray-600 dark:text-white/70">
             I enjoy solving real-world problems through practical, efficient,
             and user-focused solutions while continuously learning modern
             technologies and development practices.
@@ -314,7 +350,7 @@
     <div id="skills" class="w-full px-[12%] py-10 scroll-mt-20">
       <h4 class="text-center mb-2 text-lg font-Ovo">My Technical Skills</h4>
       <h2 class="text-center text-5xl font-Ovo">Technologies I Work With</h2>
-      <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12 text-gray-600 dark:text-white/70">
         A collection of technologies and tools I use to design, develop, and
         deploy modern web applications.
       </p>
@@ -332,15 +368,15 @@
           <div
             class="flex flex-wrap gap-3 text-sm text-gray-600 leading-5 dark:text-white/80 my-3"
           >
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">TypeScript</span>
-            <span class="skill">React.js</span>
-            <span class="skill">Next.js</span>
-            <span class="skill">Tailwind CSS</span>
-            <span class="skill">React Router</span>
-            <span class="skill">React Hook Form</span>
+            <span class="skill hover:-translate-y-1 duration-500">HTML</span>
+            <span class="skill hover:-translate-y-1 duration-500">CSS</span>
+            <span class="skill hover:-translate-y-1 duration-500">JavaScript</span>
+            <span class="skill hover:-translate-y-1 duration-500">TypeScript</span>
+            <span class="skill hover:-translate-y-1 duration-500">React.js</span>
+            <span class="skill hover:-translate-y-1 duration-500">Next.js</span>
+            <span class="skill hover:-translate-y-1 duration-500">Tailwind CSS</span>
+            <span class="skill hover:-translate-y-1 duration-500">React Router</span>
+            <span class="skill hover:-translate-y-1 duration-500">React Hook Form</span>
           </div>
         </div>
         <div
@@ -353,13 +389,13 @@
           <div
             class="flex flex-wrap gap-3 text-sm text-gray-600 leading-5 dark:text-white/80 my-3"
           >
-            <span class="skill">Node.js</span>
-            <span class="skill">Express.js</span>
-            <span class="skill">REST API</span>
-            <span class="skill">JWT</span>
-            <span class="skill">Firebase Auth</span>
-            <span class="skill">Authentication</span>
-            <span class="skill">Authorization</span>
+            <span class="skill hover:-translate-y-1 duration-500">Node.js</span>
+            <span class="skill hover:-translate-y-1 duration-500">Express.js</span>
+            <span class="skill hover:-translate-y-1 duration-500">REST API</span>
+            <span class="skill hover:-translate-y-1 duration-500">JWT</span>
+            <span class="skill hover:-translate-y-1 duration-500">Firebase Auth</span>
+            <span class="skill hover:-translate-y-1 duration-500">Authentication</span>
+            <span class="skill hover:-translate-y-1 duration-500">Authorization</span>
           </div>
         </div>
         <div
@@ -372,11 +408,11 @@
           <div
             class="flex flex-wrap gap-3 text-sm text-gray-600 leading-5 dark:text-white/80 my-3"
           >
-            <span class="skill">MongoDB</span>
-            <span class="skill">PostgreSQL</span>
-            <span class="skill">Prisma</span>
-            <span class="skill">SQL</span>
-            <span class="skill">NoSQL</span>
+            <span class="skill hover:-translate-y-1 duration-500">MongoDB</span>
+            <span class="skill hover:-translate-y-1 duration-500">PostgreSQL</span>
+            <span class="skill hover:-translate-y-1 duration-500">Prisma</span>
+            <span class="skill hover:-translate-y-1 duration-500">SQL</span>
+            <span class="skill hover:-translate-y-1 duration-500">NoSQL</span>
           </div>
         </div>
         <div
@@ -388,16 +424,26 @@
               Tools I use
             </h3>
           </div>
-          <ul class="grid grid-cols-5 sm:grid-cols-2  gap-3 sm:gap-5 max-w-xs sm:max-w-sm">
+          <ul
+            class="grid grid-cols-5 sm:grid-cols-2 gap-3 sm:gap-5 max-w-xs sm:max-w-sm"
+          >
             <li
               class="flex items-center justify-center w-full sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-white my-3"
             >
-              <img src="./images/vscode.png" alt="" class="w-5 sm:w-8 lg:w-10" />
+              <img
+                src="./images/vscode.png"
+                alt=""
+                class="w-5 sm:w-8 lg:w-10"
+              />
             </li>
             <li
               class="flex items-center justify-center w-full sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-white my-3"
             >
-              <img src="./images/firebase.png" alt="" class="w-5 sm:w-8 lg:w-10" />
+              <img
+                src="./images/firebase.png"
+                alt=""
+                class="w-5 sm:w-8 lg:w-10"
+              />
             </li>
             <li
               class="flex items-center justify-center w-full sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-white my-3"
@@ -407,12 +453,20 @@
             <li
               class="flex items-center justify-center w-full sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-white my-3"
             >
-              <img src="./images/github.png" alt="" class="w-5 sm:w-8 lg:w-10" />
+              <img
+                src="./images/github.png"
+                alt=""
+                class="w-5 sm:w-8 lg:w-10"
+              />
             </li>
             <li
               class="flex items-center justify-center w-full sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:bg-white my-3"
             >
-              <img src="./images/vercel.png" alt="" class="w-5 sm:w-8 lg:w-10" />
+              <img
+                src="./images/vercel.png"
+                alt=""
+                class="w-5 sm:w-8 lg:w-10"
+              />
             </li>
           </ul>
         </div>
@@ -423,7 +477,7 @@
     <div id="projects" class="w-full px-[12%] py-10 scroll-mt-20">
       <h4 class="text-center mb-2 text-lg font-Ovo">Featured Projects</h4>
       <h2 class="text-center text-5xl font-Ovo">What I've Built</h2>
-      <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12 text-gray-600 dark:text-white/70">
         Real-world full-stack web applications built with modern technologies,
         focusing on usability, performance, and scalable architecture.
       </p>
@@ -758,16 +812,18 @@
     <!-- --------------------- footer --------------------- -->
     <div class="mt-20">
       <div class="text-center">
-        <img
-          src="./images/logo.png"
-          alt=""
-          class="w-36 mx-auto mb-2 dark:hidden"
-        />
-        <img
-          src="./images/logo_dark.png"
-          alt=""
-          class="w-36 mx-auto mb-2 hidden dark:block"
-        />
+        <a href="#top">
+          <img
+            src="./images/logo.png"
+            alt=""
+            class="w-36 mx-auto mb-2 dark:hidden"
+          />
+          <img
+            src="./images/logo_dark.png"
+            alt=""
+            class="w-36 mx-auto mb-2 hidden dark:block"
+          />
+        </a>
         <p>Full-Stack Web Developer</p>
         <p class="mt-2 text-sm">React • TypeScript • Node.js • PostgreSQL</p>
         <div class="w-max flex items-center gap-2 mx-auto">
@@ -804,8 +860,15 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/sheaf-hassan" class="flex items-center gap-1">
-              <img src="./images/github.png" alt="" class="w-5 rounded dark:bg-white " />
+            <a
+              href="https://github.com/sheaf-hassan"
+              class="flex items-center gap-1"
+            >
+              <img
+                src="./images/github.png"
+                alt=""
+                class="w-5 rounded dark:bg-white"
+              />
               GitHub
             </a>
           </li>
