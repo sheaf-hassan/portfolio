@@ -4,8 +4,8 @@ A modern and responsive personal portfolio showcasing my skills, projects, exper
 
 ## Project Preview
 
-<img src="images/portfolio-1.png" alt="Personal Portfolio 1" width="300"/>
-<img src="images/portfolio-2.png" alt="Personal Portfolio 2" width="300"/>
+<img src="images/portfolio-1.png" alt="Personal Portfolio 1" width="300" hight="300"/>
+<img src="images/portfolio-2.png" alt="Personal Portfolio 2" width="300" hight="300"/>
 
 ## Features
 
